@@ -1,13 +1,8 @@
 import numpy as np
 
-a = np.array([[1], [2], [3]])
+a = [1, 2] # diff values for each example
+c = [[3], [4]]
+b = np.array([2, 4]).reshape(-1, 1)
 
-a = np.c_[a, np.ones(3, np.float64)]
-b = np.array([1, 2])
-c= np.array([5, 6])
-
-d = np.dot(b.T, c)
-
-
-
-print(np.add(b, c))
+d = np.dot(b, b.T)
+print(d)
